@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, sans-serif;
+  --font-serif: "Georgia", serif;
+  --color-stone: #F5F5F4;
+  --color-sand: #D9D2C5;
+  --color-warmgrey: #8C8C8C;
+  --color-graphite: #262626;
+  --color-matte: #1A1A1A;
+}
+
+@layer base {
+  html, body {
+    @apply bg-stone text-matte antialiased;
+    font-family: var(--font-sans);
+  }
+  
+  ::selection {
+    @apply bg-matte text-stone;
+  }
+}
+
+/* Hide scrollbar for clean aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-stone;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-warmgrey/50 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-graphite;
+}

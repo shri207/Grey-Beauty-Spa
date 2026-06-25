@@ -1,0 +1,6 @@
+{
+  "name": "Grey Beauty Spa",
+  "description": "Quiet Luxury. Beautiful Results. A premium beauty spa experience in Kuwait City.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
